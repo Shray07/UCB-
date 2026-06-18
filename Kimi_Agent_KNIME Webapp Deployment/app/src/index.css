@@ -1,0 +1,105 @@
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 27% 94%;
+    --foreground: 168 10% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 168 10% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 168 10% 18%;
+    --primary: 154 40% 18%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 27% 94%;
+    --secondary-foreground: 168 10% 18%;
+    --muted: 36 27% 94%;
+    --muted-foreground: 154 20% 40%;
+    --accent: 20 62% 67%;
+    --accent-foreground: 168 10% 18%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 154 40% 18% / 0.1;
+    --input: 154 40% 18% / 0.1;
+    --ring: 154 20% 40%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 168 10% 18%;
+    --sidebar-primary: 154 40% 18%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 36 27% 94%;
+    --sidebar-accent-foreground: 168 10% 18%;
+    --sidebar-border: 154 40% 18% / 0.1;
+    --sidebar-ring: 154 20% 40%;
+  }
+
+  body {
+    @apply bg-[#F5F1EB] text-[#2D3436] antialiased;
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+  }
+
+  * {
+    @apply border-[rgba(27,67,50,0.1)];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer base {
+  @media (hover: none) {
+    body {
+      cursor: auto;
+    }
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  .text-deep-forest {
+    color: #1B4332;
+  }
+  .text-sage {
+    color: #52796F;
+  }
+  .text-muted-sage {
+    color: #84A98C;
+  }
+  .text-soft-clay {
+    color: #E29578;
+  }
+  .text-charcoal {
+    color: #2D3436;
+  }
+  .bg-deep-forest {
+    background-color: #1B4332;
+  }
+  .bg-warm-stone {
+    background-color: #F5F1EB;
+  }
+  .bg-sage {
+    background-color: #52796F;
+  }
+  .bg-muted-sage {
+    background-color: #84A98C;
+  }
+  .bg-soft-clay {
+    background-color: #E29578;
+  }
+  .border-light {
+    border-color: rgba(27, 67, 50, 0.1);
+  }
+}
